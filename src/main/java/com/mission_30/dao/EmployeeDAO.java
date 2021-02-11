@@ -6,4 +6,8 @@ import com.mission_30.model.Employee;
 
 public interface EmployeeDAO extends JpaRepository<Employee, Integer>{
 
+	Employee findByEmpEmail(String empEmail);
+
+	void deleteByEmpEmail(String empEmail);
+
 }
